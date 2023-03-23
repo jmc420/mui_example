@@ -1,0 +1,34 @@
+{
+  "name": "mui_example",
+  "type": "module",
+  "version": "1.0.0",
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@types/jest": "26.0.20",
+    "@types/node": "^14.14.22",
+    "@types/react": "^18.0.28",
+    "jest": "27.1.0",
+    "nodemon": "^2.0.15",
+    "rollup": "3.19.1",
+    "typescript": "4.7.4"
+  },
+  "engines": {
+    "node": ">=5.0.0"
+  },
+  "scripts": {
+    "all": "npm run compile && npm run rollup",
+    "clean": "rm -fr ./node_modules ./build/*",
+    "compile": "tsc $*",
+    "rollup": "rollup --config rollup.config.js",
+    "test": "jest $*"
+  }
+}
